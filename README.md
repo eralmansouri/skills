@@ -22,14 +22,14 @@ This repository is both a Claude Code plugin and a plugin marketplace. After
 publishing it to GitHub, install it with:
 
 ```text
-/plugin marketplace add <github-owner>/my-skills
-/plugin install architecture-skills@my-skills
+/plugin marketplace add eralmansouri/skills
+/plugin install architecture-skills@skills
 ```
 
 For local development or testing:
 
 ```bash
-claude --plugin-dir ~/Repositories/my-skills
+claude --plugin-dir ~/Repositories/skills
 ```
 
 Claude exposes these under the `architecture-skills` namespace and can invoke
