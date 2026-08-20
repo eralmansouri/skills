@@ -1,4 +1,4 @@
-# My Skills
+# Software Architecture & Design Skills
 
 A collection of agent skills for practical software architecture and design.
 The repository currently covers domain-driven design, vertical slice
