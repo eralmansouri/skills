@@ -1,0 +1,17 @@
+{
+  "name": "my-skills",
+  "owner": {
+    "name": "Essam Almansouri"
+  },
+  "metadata": {
+    "description": "Practical software architecture skills for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "architecture-skills",
+      "source": "./",
+      "description": "Domain-driven design, vertical slices, service boundaries, event-driven systems, persistence, and event sourcing"
+    }
+  ]
+}
