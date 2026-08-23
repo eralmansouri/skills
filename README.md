@@ -16,26 +16,24 @@ Each skill is self-contained under `skills/`:
 | `persistence-design` | Transactions, queries, concurrency, caching, migrations, and multi-tenancy |
 | `event-sourcing` | Event streams, aggregates, projections, replay, and event evolution |
 
-## Claude Code
+## Installation
 
-This repository is both a Claude Code plugin and a plugin marketplace. After
-publishing it to GitHub, install it with:
+### Skills CLI
+
+Install with the [Skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add eralmansouri/skills
+```
+
+### Claude Code
 
 ```text
 /plugin marketplace add eralmansouri/skills
 /plugin install architecture-skills@skills
 ```
 
-For local development or testing:
-
-```bash
-claude --plugin-dir ~/Repositories/skills
-```
-
-Claude exposes these under the `architecture-skills` namespace and can invoke
-them automatically when their descriptions match a task.
-
-## Other Agents
+### Other
 
 The `skills/<name>/SKILL.md` layout follows the common Agent Skills format and
 can be registered directly with tools that scan custom skill paths.
