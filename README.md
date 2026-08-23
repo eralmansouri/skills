@@ -18,63 +18,28 @@ Each skill is self-contained under `skills/`:
 
 ## Installation
 
-### Skills CLI (recommended)
+### Skills CLI
 
-The fastest way to install is with the
-[Skills CLI](https://github.com/vercel-labs/skills):
+Install with the [Skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
 npx skills add eralmansouri/skills
 ```
 
-The interactive prompt lets you pick which skills and agents to install. You can
-also target agents directly:
-
-```bash
-# Install all skills for a specific agent
-npx skills add eralmansouri/skills -a claude-code
-npx skills add eralmansouri/skills -a opencode
-
-# Install a single skill
-npx skills add eralmansouri/skills --skill domain-driven-design
-
-# Non-interactive install of everything
-npx skills add eralmansouri/skills --all
-```
-
 ### OpenCode
 
-Use the Skills CLI to install for OpenCode:
-
-```bash
-npx skills add eralmansouri/skills -a opencode
-```
-
-This creates the skill files in your `.opencode/skills/` directory so OpenCode
-can pick them up automatically.
+Copy the skills you want into `.opencode/skills/` in your project (or
+`~/.opencode/skills/` for global access).
 
 ### Claude Code
-
-This repository is also a Claude Code plugin. Install it with:
 
 ```text
 /plugin marketplace add eralmansouri/skills
 /plugin install architecture-skills@skills
 ```
 
-For local development or testing:
-
-```bash
-claude --plugin-dir ~/Repositories/skills
-```
-
-Claude exposes these under the `architecture-skills` namespace and can invoke
-them automatically when their descriptions match a task.
-
-### Other Agents
-
-The `skills/<name>/SKILL.md` layout follows the common Agent Skills format and
-can be registered directly with tools that scan custom skill paths.
+Or copy the skills you want into `.claude/skills/` in your project (or
+`~/.claude/skills/` for global access).
 
 ## Credit
 
