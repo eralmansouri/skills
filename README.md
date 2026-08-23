@@ -26,11 +26,6 @@ Install with the [Skills CLI](https://github.com/vercel-labs/skills):
 npx skills add eralmansouri/skills
 ```
 
-### OpenCode
-
-Copy the skills you want into `.opencode/skills/` in your project (or
-`~/.opencode/skills/` for global access).
-
 ### Claude Code
 
 ```text
@@ -38,8 +33,10 @@ Copy the skills you want into `.opencode/skills/` in your project (or
 /plugin install architecture-skills@skills
 ```
 
-Or copy the skills you want into `.claude/skills/` in your project (or
-`~/.claude/skills/` for global access).
+### Other
+
+The `skills/<name>/SKILL.md` layout follows the common Agent Skills format and
+can be registered directly with tools that scan custom skill paths.
 
 ## Credit
 
