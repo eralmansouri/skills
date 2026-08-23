@@ -16,10 +16,46 @@ Each skill is self-contained under `skills/`:
 | `persistence-design` | Transactions, queries, concurrency, caching, migrations, and multi-tenancy |
 | `event-sourcing` | Event streams, aggregates, projections, replay, and event evolution |
 
-## Claude Code
+## Installation
 
-This repository is both a Claude Code plugin and a plugin marketplace. After
-publishing it to GitHub, install it with:
+### Skills CLI (recommended)
+
+The fastest way to install is with the
+[Skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add eralmansouri/skills
+```
+
+The interactive prompt lets you pick which skills and agents to install. You can
+also target agents directly:
+
+```bash
+# Install all skills for a specific agent
+npx skills add eralmansouri/skills -a claude-code
+npx skills add eralmansouri/skills -a opencode
+
+# Install a single skill
+npx skills add eralmansouri/skills --skill domain-driven-design
+
+# Non-interactive install of everything
+npx skills add eralmansouri/skills --all
+```
+
+### OpenCode
+
+Use the Skills CLI to install for OpenCode:
+
+```bash
+npx skills add eralmansouri/skills -a opencode
+```
+
+This creates the skill files in your `.opencode/skills/` directory so OpenCode
+can pick them up automatically.
+
+### Claude Code
+
+This repository is also a Claude Code plugin. Install it with:
 
 ```text
 /plugin marketplace add eralmansouri/skills
@@ -35,7 +71,7 @@ claude --plugin-dir ~/Repositories/skills
 Claude exposes these under the `architecture-skills` namespace and can invoke
 them automatically when their descriptions match a task.
 
-## Other Agents
+### Other Agents
 
 The `skills/<name>/SKILL.md` layout follows the common Agent Skills format and
 can be registered directly with tools that scan custom skill paths.
