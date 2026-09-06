@@ -32,7 +32,7 @@ persistence, and message consumers.
 - Load only the consistency boundary required for commands.
 - Share domain behavior among slices in the same lifecycle; vertical slices do not mean share nothing.
 - Keep unrelated capabilities from sharing mutable domain models.
-- Use controllers and minimal APIs as entry points, not architectural identities.
+- Use controllers, route handlers, and minimal APIs as entry points, not architectural identities.
 - Add a request/handler boundary for multiple entry points, a useful pipeline, or framework isolation.
 - Use interfaces for meaningful contracts or substitution seams, not by reflex.
 
@@ -56,21 +56,25 @@ dependencies obscure the use case.
 
 ```text
 src/
-  Features/
-    Shipping/
-      Dispatch/
-        Endpoint.cs
-        Command.cs
-        Handler.cs
-      Deliver/
-        Endpoint.cs
-        Command.cs
-        Handler.cs
-      Domain/
-        Shipment.cs
-      Data/
-        ShippingDbContext.cs
+  features/
+    shipping/
+      dispatch/
+        Endpoint
+        Command
+        Handler
+      deliver/
+        Endpoint
+        Command
+        Handler
+      domain/
+        Shipment
+      data/
+        ShippingStore
 ```
+
+File extensions, casing, and the name of the persistence type follow whatever
+the stack already uses. The shape is what matters, one folder per use case,
+with the domain and persistence the slices share sitting next to them.
 
 One file containing a complete small slice is equally valid. Optimize for
 locality and discoverability, not file count.
