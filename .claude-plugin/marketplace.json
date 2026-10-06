@@ -11,7 +11,7 @@
     {
       "name": "architecture-skills",
       "source": "./",
-      "description": "Domain-driven design, vertical slices, service boundaries, event-driven systems, persistence, and event sourcing"
+      "description": "Domain-driven design, vertical slices, service boundaries, event-driven systems, persistence, event sourcing, and codebase design"
     }
   ]
 }

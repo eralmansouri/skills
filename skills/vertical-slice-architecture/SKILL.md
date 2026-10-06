@@ -93,6 +93,7 @@ share canonical business entities across unrelated capabilities.
 
 - Assert outcomes, transitions, emitted facts, and public contracts.
 - Test invariants directly with given state, action, and expected result.
+- Take expected values from an independent source such as a literal, worked example, or spec, never recomputed the way the code computes them.
 - Verify ORM and query behavior against realistic persistence where practical.
 - Substitute at the real seam: HTTP handler, time provider, delegate, or stable interface.
 - Test pipeline components individually and add one integration test for order and short-circuiting.

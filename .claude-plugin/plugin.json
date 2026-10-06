@@ -1,6 +1,6 @@
 {
   "name": "architecture-skills",
-  "description": "Practical skills for domain-driven design, vertical slices, service boundaries, event-driven systems, persistence, and event sourcing",
+  "description": "Practical skills for domain-driven design, vertical slices, service boundaries, event-driven systems, persistence, event sourcing, and codebase design",
   "version": "1.0.0",
   "author": {
     "name": "Essam Almansouri"

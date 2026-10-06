@@ -36,6 +36,19 @@ identity without sharing all state and behavior.
 Strategic DDD can clarify any large system. Rich tactical modeling is useful
 only where local behavior is sufficiently complex.
 
+## Recording Language And Decisions
+
+Keep a `GLOSSARY.md` per bounded context, or one at the root for a single
+context. Create it when the first term is resolved and update it the moment a
+term changes. Each entry gives one canonical term, a one- or two-sentence
+definition of what it is, and rejected synonyms under `_Avoid_`. Include only
+domain terms; implementation details belong elsewhere.
+
+- Call out terms that conflict with the glossary or overload one word for two concepts.
+- Stress-test definitions with concrete edge-case scenarios.
+- When stated behavior and the code disagree, surface the contradiction.
+- Record an ADR in `docs/adr/NNNN-slug.md` only when a decision is hard to reverse, surprising without context, and the result of a real trade-off. A few sentences of context, decision, and reason are enough.
+
 ## Choosing A Rule Mechanism
 
 | Situation | Prefer |

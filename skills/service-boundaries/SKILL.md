@@ -31,6 +31,7 @@ useful boundary exists.
 - The same identity may have different purpose-specific models in different boundaries.
 - Keep logical and physical boundaries separate; several modules may share a deployment or database instance.
 - Prevent modules from reading or writing one another's internal schemas by default.
+- Enforce module dependency rules with an architecture test or dependency linter, and confirm it fails on a deliberate violation.
 - Use public APIs and events as translated contracts, not serialized domain or persistence models.
 - Use an anti-corruption layer when external semantics differ from the receiving context.
 - Treat all communication styles as forms of coupling with different costs.
