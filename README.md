@@ -3,7 +3,7 @@
 A collection of agent skills for practical software architecture and design.
 The repository currently covers domain-driven design, vertical slice
 architecture, service boundaries, event-driven systems, persistence design,
-event sourcing, and codebase design.
+event sourcing, codebase design, and design review.
 
 Each skill is self-contained under `skills/`:
 
@@ -16,6 +16,7 @@ Each skill is self-contained under `skills/`:
 | `persistence-design` | Transactions, queries, concurrency, caching, migrations, and multi-tenancy |
 | `event-sourcing` | Event streams, aggregates, projections, replay, and event evolution |
 | `codebase-design` | Deep modules, interfaces, seams, testability, and refactoring candidates |
+| `design-review` | Reviewing an area or a change for context ownership, slicing, module depth, and flexibility where change happens |
 
 ## Installation
 
@@ -46,5 +47,6 @@ videos published by [CodeOpinion on YouTube](https://www.youtube.com/@CodeOpinio
 Many thanks to Derek Comartin for sharing years of practical architecture and
 software design guidance.
 
-The `codebase-design` skill and the glossary and ADR guidance are adapted from
+The `codebase-design` skill, the glossary and ADR guidance, and the process and
+report behind `design-review` are adapted from
 [Matt Pocock's skills](https://github.com/mattpocock/skills).
